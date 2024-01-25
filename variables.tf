@@ -4,8 +4,8 @@ variable "github_repository_name" {
   nullable    = false
 
   validation {
-    error_message = "The repository name must begin with `terraform-azurerm-avm-(res|ptn)`."
-    condition     = can(regex("^terraform-azurerm-avm-(res|ptn).*", var.github_repository_name))
+    error_message = "The repository name must begin with `terraform-azurerm-avm-(res|ptn)-`."
+    condition     = can(regex("^terraform-azurerm-avm-(res|ptn)-.*", var.github_repository_name))
   }
 
   validation {
