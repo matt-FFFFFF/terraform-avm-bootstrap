@@ -1,6 +1,6 @@
 variable "github_repository_name" {
   type        = string
-  description = "The name of the repository. E.g. terraform-azurerm-avm-(ptn|res)<name>"
+  description = "The name of the repository. E.g. terraform-azurerm-avm-(ptn|res)-<name>"
   nullable    = false
 
   validation {
