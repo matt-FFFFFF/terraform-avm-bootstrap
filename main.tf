@@ -10,7 +10,7 @@ resource "github_repository" "this" {
   }
 }
 
-resource "github_repository_environment" "this" {
+resource "github_repository_environment" "test" {
   repository  = github_repository.this.id
   environment = "test"
   reviewers {
